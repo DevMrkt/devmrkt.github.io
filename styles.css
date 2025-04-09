@@ -1,4 +1,4 @@
-/* Reset styles */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,70 +7,93 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.container, .login-container, .signup-container, .survey-container {
-    width: 80%;
-    margin: 0 auto;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header {
+h2 {
+    color: #9b59b6; /* Purple text */
     text-align: center;
 }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
+a {
+    color: #9b59b6; /* Purple links */
+    text-decoration: none;
 }
 
-h1, h2 {
-    color: #2c3e50;
+a:hover {
+    text-decoration: underline;
 }
 
-ul {
-    list-style: none;
-}
-
-ul li {
-    margin: 10px 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 5px;
-}
-
-input, textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button {
-    padding: 10px;
-    background-color: #3498db;
+    background-color: #9b59b6; /* Purple button */
     color: white;
     border: none;
-    border-radius: 4px;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 20px;
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #8e44ad;
 }
 
-.login-link, .signup-container p {
-    text-align: center;
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    background-color: #2c2c2c;
+    color: white;
+    border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #9b59b6;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form label {
+    color: #9b59b6;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form {
     margin-top: 20px;
+}
+
+/* Button for Order on Index */
+.order-button {
+    background-color: #9b59b6;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+.order-button:hover {
+    background-color: #8e44ad;
 }
